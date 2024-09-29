@@ -22,3 +22,16 @@ class Human:
     def change_gender(self, new_gender):
         self.gender = new_gender    # gán giá trị mới cho gender
         self.display_info()         # hiện thông tin sau khi sửa
+
+# ======== BÀI TẬP ========
+class Rectangle:
+    # Khởi tạo với 2 thuộc tính: a - chiều dài, b - chiều rộng
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    # Phương thức tính chu vi HCN
+    def chuvi(self):
+        return 2*(self.a + self.b)
+    # Phương thức tính diện tích HCN
+    def dien_tich(self):
+        return self.a * self.b

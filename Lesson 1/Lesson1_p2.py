@@ -1,4 +1,4 @@
-from Lesson1_p1 import Human
+from Lesson1_p1 import Human, Rectangle
 
 # Khởi tạo đối tượng
 human1 = Human('Hải meme', 15, 'male')
@@ -14,3 +14,13 @@ human1.say_hello()
 
 # Sử dụng phương thức change_gender
 human1.change_gender('meow')
+
+# ======== BÀI TẬP ========
+# Khởi tạo 1 HCN
+hcn1 = Rectangle(5,2)
+
+# Sử dụng phương thức tính chu vi
+print('Chu vi HCN:', hcn1.chuvi())
+
+# Sử dụng phương thức tính diện tích
+print('Diện tích HCN:', hcn1.dien_tich())
