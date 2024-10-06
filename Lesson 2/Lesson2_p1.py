@@ -27,3 +27,23 @@ class VatNuoi():
         return f'{self.Giong} - {self.MauSac} - {self.Tuoi} - {self.CanNang}'
     def thong_tin(self):
         print(f'{self.Giong} - {self.MauSac} - {self.Tuoi} - {self.CanNang}')
+
+class Xe:
+    def __init__(self, hang, mau_sac, gia_tien):
+        self.hang = hang
+        self.mau_sac = mau_sac
+        self.gia_tien = gia_tien
+    def khoi_dong(self):
+        print(f'Xe {self.hang} đang khởi động')
+
+class XeHoi(Xe):
+    def __init__(self, hang, mau_sac, gia_tien):
+        super().__init__(hang, mau_sac, gia_tien)
+    def chay_bang_bon_banh(self):
+        print(f'Xe {self.hang} đang chạy về phía trước bằng động cơ')
+
+class XeDap(Xe):
+    def __init__(self, hang, mau_sac, gia_tien):
+        super().__init__(hang, mau_sac, gia_tien)
+    def dap_bang_hai_chan(self):
+        print(f'Xe {self.hang} đang được đạp về phía trước')
