@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="trang1">
+    <file>images/loopy.jpg</file>
+    <file>images/mindx_logo.jpg</file>
+  </qresource>
+</RCC>
